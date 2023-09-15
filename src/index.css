@@ -10,7 +10,7 @@
 
 .app {
   background-color: #d9d9d9;
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   justify-content: center;
 }
@@ -22,6 +22,7 @@
   justify-content: center;
   gap: 15px;
   width: 80%;
+  max-width: 500px;
   min-height: 300px;
   border-radius: 15px;
   margin: auto;
@@ -57,6 +58,7 @@ input:focus {
 .rub-container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .rub {
@@ -130,4 +132,19 @@ select::-ms-expand {
 
 .error {
   color: red;
+}
+
+@media screen and (max-width: 425px) {
+  .content {
+    gap: 21px;
+    height: 230px;
+  }
+
+  input,
+  select {
+    width: 13em;
+  }
+  .input-rub {
+    width: 11.4em;
+  }
 }

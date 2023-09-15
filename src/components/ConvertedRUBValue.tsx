@@ -20,6 +20,8 @@ const ConvertedRUBValue = ({ valueInRUB, onRUBChange }: IConvertedRUBValue): JSX
       <input
         type="number"
         className="input-rub"
+        inputMode="numeric"
+        pattern="[0-9]*"
         value={valueInRUB === 0 ? '' : valueInRUB}
         onChange={handleInputChange}
       />
