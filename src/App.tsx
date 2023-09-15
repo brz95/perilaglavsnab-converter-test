@@ -65,6 +65,7 @@ const App = (): JSX.Element => {
       <Loader loaderActive={status.isLoading} />
       {!status.isLoading && (
         <div className="content">
+          <h1 className='title'>Конвертер валют</h1>
           <CurrencyInput value={inputValue} onChange={setInputValue} />
           <CurrencySelector rates={rates} selectedCurrency={selectedCurrency} onChange={setSelectedCurrency} />
           <ConvertedRUBValue valueInRUB={convertedValueResult} onRUBChange={handleRUBChange} />

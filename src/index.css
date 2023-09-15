@@ -61,6 +61,11 @@ input:focus {
   justify-content: center;
 }
 
+.title {
+  font-weight: 500;
+  font-size: 35px;
+}
+
 .rub {
   width: 1em;
   text-align: right;
@@ -146,5 +151,8 @@ select::-ms-expand {
   }
   .input-rub {
     width: 11.4em;
+  }
+  .title {
+    font-size: 27px;
   }
 }
